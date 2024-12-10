@@ -26,7 +26,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Budget App <a name="about-project"></a>
+# 📖 Matholic <a name="about-project"></a>
 
 This project features a simple GUI that assists users with a wide range of mathematical calculations, from basic operations to more advanced tasks, based on their selected operations and inputs.
 
