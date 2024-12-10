@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=matlab&logoColor=white" alt="matlab" height="auto" />
+<img src="https://img.shields.io/badge/matlab.svg?style=for-the-badge&logo=matlab&logoColor=white" alt="matlab" height="auto" />
 
 <div align="center">
   <h1><b>Matholic</b></h1>
