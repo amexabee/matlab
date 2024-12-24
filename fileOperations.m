@@ -20,4 +20,5 @@ function fileOperations()
         otherwise
             disp('Invalid choice.');
     end
+    open main.fig
 end

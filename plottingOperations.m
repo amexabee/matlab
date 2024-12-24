@@ -44,4 +44,5 @@ function plottingOperations()
         otherwise
             disp('Invalid choice. Please select either 1 or 2.');
     end
+    open main.fig
 end

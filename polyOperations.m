@@ -8,27 +8,21 @@ function polyOperations()
     
     switch choice
         case 1
-            coeffs = input('Enter polynomial coefficients: ');
-            r = roots(coeffs);
-            fprintf('Roots: %s\n', mat2str(r));
+            coeffs = input('Enter polynomial coefficients in a vector form (ex. [1 5 6]: ');
+            r = roots(coeffs)
        
         case 2
-           
-            
-            coeffs1 = input('Enter the first polynomial coefficients: ');
-            coeffs2 = input('Enter the second polynomial coefficients: ');
-            
-                result = conv(coeffs1, coeffs2);
-                fprintf('Convolution Result: %s\n', mat2str(result));
+            coeffs1 = input('Enter the first polynomial coefficients in a vector form (ex. [1 5 6]: ');
+            coeffs2 = input('Enter the second polynomial coefficients in a vector form (ex. [1 5 6]: ');
+            result = conv(coeffs1, coeffs2)
                
-            case 3
-                coeffs1 = input('Enter the first polynomial coefficients: ');
-            coeffs2 = input('Enter the second polynomial coefficients: ');
-             [q, r] = deconv(coeffs1, coeffs2);
-                fprintf('Deconvolution Quotient: %s\n', mat2str(q));
-                fprintf('Deconvolution Remainder: %s\n', mat2str(r));
+        case 3
+            coeffs1 = input('Enter the first polynomial coefficients in a vector form (ex. [1 5 6]: ');
+            coeffs2 = input('Enter the second polynomial coefficients in a vector form (ex. [1 5 6]: ');
+            [quotient, remaind] = deconv(coeffs1, coeffs2)
             
         otherwise
             disp('Invalid choice.');
     end
+    open main.fig
 end

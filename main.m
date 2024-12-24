@@ -110,7 +110,7 @@ function basic_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 close(gcf)
 basicOperations()
-drawnow;  
+drawnow  
 
 % --- Executes on button press in calculus.
 function calculus_Callback(hObject, eventdata, handles)
@@ -119,7 +119,7 @@ function calculus_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 close(gcf)
 symbolicComputations()
-drawnow;  
+drawnow  
 
 % --- Executes on button press in poly.
 function poly_Callback(hObject, eventdata, handles)
@@ -128,7 +128,7 @@ function poly_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 close(gcf)
 polyOperations()
-drawnow;
+drawnow
 
 % --- Executes on button press in excel.
 function excel_Callback(hObject, eventdata, handles)
@@ -137,7 +137,7 @@ function excel_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 close(gcf)
 fileOperations()
-drawnow;
+drawnow
 
 % --- Executes on button press in graph.
 function graph_Callback(hObject, eventdata, handles)
@@ -153,6 +153,6 @@ function quit_Callback(hObject, eventdata, handles)
 % hObject    handle to quit (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-
-exit
-drawnow;  
+close(gcf)
+terminate()
+drawnow  
