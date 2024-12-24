@@ -27,11 +27,11 @@ function varargout = main(varargin)
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
-                   'gui_Singleton',  gui_Singleton, ...
-                   'gui_OpeningFcn', @main_OpeningFcn, ...
-                   'gui_OutputFcn',  @main_OutputFcn, ...
-                   'gui_LayoutFcn',  [] , ...
-                   'gui_Callback',   []);
+    'gui_Singleton',  gui_Singleton, ...
+    'gui_OpeningFcn', @main_OpeningFcn, ...
+    'gui_OutputFcn',  @main_OutputFcn, ...
+    'gui_LayoutFcn',  [] , ...
+    'gui_Callback',   []);
 if nargin && ischar(varargin{1})
     gui_State.gui_Callback = str2func(varargin{1});
 end
@@ -63,7 +63,7 @@ guidata(hObject, handles);
 
 
 % --- Outputs from this function are returned to the command line.
-function varargout = main_OutputFcn(hObject, eventdata, handles) 
+function varargout = main_OutputFcn(hObject, eventdata, handles)
 % varargout  cell array for returning output args (see VARARGOUT);
 % hObject    handle to figure
 % eventdata  reserved - to be defined in a future version of MATLAB
@@ -110,7 +110,7 @@ function basic_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 close(gcf)
 basicOperations()
-drawnow  
+drawnow
 
 % --- Executes on button press in calculus.
 function calculus_Callback(hObject, eventdata, handles)
@@ -119,7 +119,7 @@ function calculus_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 close(gcf)
 symbolicComputations()
-drawnow  
+drawnow
 
 % --- Executes on button press in poly.
 function poly_Callback(hObject, eventdata, handles)
@@ -155,4 +155,4 @@ function quit_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 close(gcf)
 terminate()
-drawnow  
+drawnow
