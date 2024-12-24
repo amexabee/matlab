@@ -4,8 +4,10 @@ function basicOperations()
     disp('1. Find max, min, sum');
     disp('2. Calculate length and size');
     disp('3. Use find for locating elements');
+    disp('4. Find fibonacci of n');
     
-    choice = input('Select an operation (1-3): ');
+    
+    choice = input('Select an operation (1-4): ');
     
     switch choice
         case 1
@@ -22,8 +24,26 @@ function basicOperations()
             value = input('Enter the value to find: ');
             indices = find(vec == value);
             fprintf('Indices: %s\n', mat2str(indices));
-        otherwise
+        case 4
+            n = input('Fibonacci of n: ');
+            fibonacci(n);
+        otherwise  
             disp('Invalid choice.');
+    end
+    
+    function f = fibonacci(n)
+        if (n < 0 || mod(n, 1) ~= 0) 
+            disp('n must be an integer greater than 0')
+            return
+        end
+        fib = zeros(1,n);
+        if (length(arr) > 1)
+            arr(2) = 1;
+        end
+        for i=3:n
+            arr(i) = arr(i-1) + arr(i-2);
+        end
+        arr
     end
     open main.fig
 end
