@@ -37,13 +37,13 @@ function basicOperations()
             return
         end
         fib = zeros(1,n);
-        if (length(arr) > 1)
-            arr(2) = 1;
+        if (length(fib) > 1)
+            fib(2) = 1;
         end
         for i=3:n
-            arr(i) = arr(i-1) + arr(i-2);
+            fib(i) = fib(i-1) + fib(i-2);
         end
-        arr
+        fib
     end
     open main.fig
 end

@@ -26,15 +26,10 @@ function plottingOperations()
         case 2
             x = input('Enter the vector/matrix for x (e.g., -5:0.5:5): ');
             y = input('Enter the vector/matrix for y (e.g., -5:0.5:5): ');
-            z = input('Enter the matrix for z : ');
             
-           
-            if ~isequal(size(z), [length(y), length(x)])
-                disp('Error: Dimensions of z must match the lengths of x and y.');
-                return;
-            end
-            
-            mesh(x, y, z);
+            [X, Y] = meshgrid(x, y);   
+            Z = X.^2 + Y.^2;          
+            mesh(X, Y, Z);
             title('3D Mesh Plot');
             xlabel('x');
             ylabel('y');
