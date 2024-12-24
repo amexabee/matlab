@@ -3,8 +3,9 @@ function fileOperations()
     disp('File Operations:');
     disp('1. Write to Excel');
     disp('2. Read from Excel');
+    disp('3. Publish as pdf');
     
-    choice = input('Select an operation (1-2): ');
+    choice = input('Select an operation (1-3): ');
     
     switch choice
         case 1
@@ -17,6 +18,9 @@ function fileOperations()
             data = xlsread(filename);
             disp('Data read from Excel:');
             disp(data);
+        case 3
+            data = input('Enter matlab file name to be published: ', 's');
+            publish (data, 'pdf')
         otherwise
             disp('Invalid choice.');
     end
