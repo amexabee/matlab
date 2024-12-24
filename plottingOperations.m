@@ -1,4 +1,5 @@
 function plottingOperations()
+    clc
     disp('Plotting Operations:');
     disp('1.  Plot (plot)');
     disp('2.  Mesh Plot (mesh)');

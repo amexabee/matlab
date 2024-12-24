@@ -1,4 +1,5 @@
 function fileOperations()
+    clc
     disp('File Operations:');
     disp('1. Write to Excel');
     disp('2. Read from Excel');

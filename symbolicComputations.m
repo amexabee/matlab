@@ -1,4 +1,5 @@
 function symbolicComputations()
+    clc
     syms x;
     disp('Symbolic Computations:');
     disp('1. Solve equations');

@@ -1,4 +1,5 @@
 function basicOperations()
+    clc
     disp('Basic Operations:');
     disp('1. Find max, min, sum');
     disp('2. Calculate length and size');
@@ -24,4 +25,5 @@ function basicOperations()
         otherwise
             disp('Invalid choice.');
     end
+    open main.fig
 end

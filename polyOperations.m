@@ -1,4 +1,5 @@
 function polyOperations()
+    clc
     disp('Polynomial Operations:');
     disp('1. Find roots');
     disp('2. Convolve polynomials');
